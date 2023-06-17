@@ -12,7 +12,7 @@ hover        hsl(0 0% 100% / 0.1)
 */
 
 header {
-  background-color: #0A192F;
+  background-color: #0a192f;
   padding: 15px;
   border: 0;
 }
@@ -25,15 +25,14 @@ nav {
 
 .logo-icon {
   margin-right: 10px;
-  margin-left:40px;
-  
+  margin-left: 40px;
 }
 
 .logo-icon a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 .logo-icon svg {
@@ -43,7 +42,6 @@ nav {
 #logo:hover #Shape {
   fill: hsl(0 0% 100% / 0.1);
 }
-
 
 .navbar-links {
   display: flex;
@@ -76,27 +74,27 @@ nav {
 }
 
 .navbar-links ul li a p.number {
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 .navbar-links ul li a:hover p {
-  color: #00FFFF;
+  color: #00ffff;
 }
 
 .resume-button {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #0A192F;
-  color: #00FFFF;
+  background-color: #0a192f;
+  color: #00ffff;
   text-decoration: none;
   border-radius: 4px;
-  border: 2px solid #00FFFF;
+  border: 2px solid #00ffff;
   margin-left: 10px; /* Add some spacing between the last list item and the resume button */
 }
 
-.resume-button:hover{
+.resume-button:hover {
   background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(0.1rem);
+  backdrop-filter: blur(0.1rem);
 }
 
 .toggle-button {
@@ -113,11 +111,10 @@ nav {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #00FFFF;
+  background-color: #00ffff;
   margin-bottom: 5px;
   transition: transform 0.3s, opacity 0.3s;
 }
-
 
 .menu-content {
   position: fixed;
@@ -125,7 +122,7 @@ nav {
   right: 0;
   width: 70%;
   height: 100vh;
-  background-color: #0A192F;
+  background-color: #0a192f;
   padding: 20px;
   transform: translateX(100%);
   transition: transform 0.3s;
@@ -146,122 +143,106 @@ nav {
 }
 
 .menu-content a {
-  color: #00FFFF;
+  color: #00ffff;
   text-decoration: none;
 }
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
-  
-  .right-div{
-    display:none;
+  .right-div {
+    display: none;
   }
-   .left-div{
-    display:none;
+  .left-div {
+    display: none;
   }
-  
+
   .brand-title svg {
     height: 30px;
   }
 
-    .navbar {
+  .navbar {
     flex-direction: column; /*makes logo and list on top of eachother */
     align-items: flex-start; /*pushes items to the left*/
   }
-  
+
   .navbar-links {
-    position:fixed;
+    position: fixed;
     inset: 0 0 0 50%;
     flex-direction: column; /*makes logo and list on top of eachother */
     align-items: flex-start; /*pushes items to the left*/
-    background: hsl(0 0% 100% / 0.1); /*color saturation lightness and /0.1 for transparent background */
-    backdrop-filter:blur(0.1rem); /*higher number more blur*/
+    background: hsl(
+      0 0% 100% / 0.1
+    ); /*color saturation lightness and /0.1 for transparent background */
+    backdrop-filter: blur(0.1rem); /*higher number more blur*/
     padding: 18rem 2em;
     z-index: 9;
-    
-    
   }
 
   .toggle-button span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #00FFFF;
-  margin-bottom: 5px;
-  transition: transform 0.3s, opacity 0.3s;
-    
-    
-}
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #00ffff;
+    margin-bottom: 5px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
 
-.toggle-button span:first-child {
-  transform-origin: top left;
-}
+  .toggle-button span:first-child {
+    transform-origin: top left;
+  }
 
-.toggle-button span:last-child {
-  transform-origin: bottom left;
-}
-
+  .toggle-button span:last-child {
+    transform-origin: bottom left;
+  }
 
   .navbar-links {
-  /* Remove the "display: none;" property */
-  display: none;
-  width: 100%;
-}
+    /* Remove the "display: none;" property */
+    display: none;
+    width: 100%;
+  }
 
-.menu-content.active {
-  /* Change "translateX(0)" to "translateX(100%)" */
-  transform: translateX(100%);
-}
-
-/* Add the following CSS code */
-
-.navbar-links.active {
-  /* Add the sliding animation */
-  animation: slideIn 0.3s forwards;
-}
-
-@keyframes slideIn {
-  from {
+  .menu-content.active {
+    /* Change "translateX(0)" to "translateX(100%)" */
     transform: translateX(100%);
   }
-  to {
-    transform: translateX(0);
+
+  /* Add the following CSS code */
+
+  .navbar-links.active {
+    /* Add the sliding animation */
+    animation: slideIn 0.3s forwards;
   }
-  
-  
-}
 
-
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
   .navbar-links ul li {
     text-align: center;
-    height:53px;
+    height: 53px;
     width: 114px;
-    
   }
 
   .navbar-links ul li a {
     padding: 0.5rem 1rem; /* shortens the padding making the elements appear closer together*/
-  display:flex;
+    display: flex;
     flex-direction: column;
   }
 
- 
-  
   .navbar-links.active {
     /* for when the mini menu appears */
     display: flex;
-     flex-direction: column  
-  
+    flex-direction: column;
   }
 
-  .resume-button{
-    margin-left:22px;
+  .resume-button {
+    margin-left: 22px;
   }
-  
-    
-  
-   
 }
 @media (min-width: 769px) {
   .toggle-button {
@@ -269,134 +250,204 @@ nav {
   }
 }
 
-#hero{
-  padding:0;
-  margin:0;
-  border:0;
-  display:flex;
-}
+/*--------End of Navbar Styling --------*/
 
-h1{
-  font-size: 64px;
-  padding: 100px 0 10px 0;
-  color:white;
-     }
-
-h2{
-  font-size:48px;
-  padding: 0px 0 10px 0;
-  color:#00FFFF;
-     }
-
-
-.hero-text{
-  flex: 1;
-  max-width: 50%;
-  margin: 0 0 0 20px;
-}
-
-
-.hero-img img{
-  flex: 1;
-  width: 460px; 
-  height: auto;
-  margin: 0 0 0 60px;
-
-}
-
+/*Left, Middle, and Right Div container Styling */
 
 .left-div {
   position: fixed;
   top: 20;
   left: 0;
-  width: 10%; /* Adjust the width as needed */
+  width: 10%;
   height: 100vh;
-  background-color: #0A192F; /* Adjust the background color as needed */
-  /*replace green for #0A192F after design layout*/
+  background-color: #0a192f;
 }
 
-.left-div-ul{
-  position:center;
-  text-align:center;
+.left-div-ul {
+  position: center;
+  text-align: center;
 }
 
 .middle-div {
-  width: 80%; /* Adjust the width as needed */
+  width: 80%;
   margin: 0px auto;
-  height: 800px; /* Adjust the height as needed */
-  background-color: #0A192F; /* Adjust the background color as needed */
-}
-
-.hero-p{
-  color:rgb(136, 146, 176);
-  
-}
-
-.contact-button {
-  display: inline-block;
-  padding: 16px 24px;
-  background-color: #0A192F;
-  color: #00FFFF;
-  text-decoration: none;
-  border-radius: 4px;
-  border: 2px solid #00FFFF;
-  margin-top: 30px; /* Add some spacing */
-}
-
-.contact-button:hover{
-  background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(0.1rem);
+  height: 800px;
+  background-color: #0a192f;
 }
 
 .right-div {
   position: fixed;
   top: 20;
   right: 0;
-  width: 10%; /* Adjust the width as needed */
+  width: 10%;
   height: 100vh;
-  background-color: #0A192F; /* Adjust the background color as needed */
-  /*replace green for #0A192F after design layout*/
+  background-color: #0a192f;
 }
 
-.right-div-ul{
-  position:center;
-  text-align:center;
-  list-style-type: none
+.right-div-ul {
+  position: center;
+  text-align: center;
+  list-style-type: none;
 }
-.right-div-email{
-  color: #00FFFF;
-  text-decoration:none;
+
+.right-div-email {
+  color: #00ffff;
+  text-decoration: none;
   writing-mode: vertical-lr;
-  padding-top:180px;
-
+  padding-top: 180px;
 }
 
-.right-div-email:hover{
-   font-size:1.03em;
+.right-div-email:hover {
+  font-size: 1.03em;
 }
 
 .vertical {
-      border-left: 2px solid rgb(136, 146, 176);
-      height: 200px;
-      position:absolute;
-      left: 50%;
-  margin-top:12px;
-    }
+  border-left: 2px solid rgb(136, 146, 176);
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+}
 
 i {
-  color: #00FFFF;
-  padding:5px;
+  color: #00ffff;
+  padding: 5px;
 }
-i:hover{
-   font-size:2.3em;
+i:hover {
+  font-size: 2.3em;
 }
-.top-icon{
-  padding-top:280px;
+.top-icon {
+  padding-top: 280px;
 }
 
+/*--------End of Left, Middle, and Right Div container Styling --------*/
+
+/*Hero Styling Section*/
+
+#hero {
+  padding: 0 0 150px 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+}
+
+h1 {
+  font-size: 64px;
+  padding: 100px 0 10px 0;
+  color: white;
+}
+
+h2 {
+  font-size: 48px;
+  padding: 0px 0 10px 0;
+  color: #00ffff;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  margin: 0 0 0 20px;
+}
+
+.hero-img img {
+  flex: 1;
+  width: 460px;
+  height: auto;
+  margin: 0 0 0 60px;
+}
+
+.hero-p {
+  color: rgb(136, 146, 176);
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 16px 24px;
+  background-color: #0a192f;
+  color: #00ffff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #00ffff;
+  margin-top: 30px; /* Add some spacing */
+}
+
+.contact-button:hover {
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(0.1rem);
+}
+
+/*--------End of Hero Styling Section --------*/
+
+/*About Me Styling Section*/
+
+#about-me {
+  padding: 150px 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: left;
+  padding-left: 120px;
+}
+
+.about-heading {
+  position: relative;
+}
+
+.about-heading::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 620px;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 250px;
+  background-color: rgb(136, 146, 176);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-me-img {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-me-img img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 0 0 0;
+}
+
+.about-me-text {
+  flex: 1;
+  max-width: 50%;
+  margin: 0 0 0 0;
+}
+
+.about-me-p {
+  color: rgb(136, 146, 176);
+}
+
+.color-text {
+  color: #00ffff;
+}
+
+/*--------End of About Me Styling Section --------*/
 
 body,
-
 p,
 ul,
 li {
@@ -406,15 +457,10 @@ li {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0A192F;
+  background-color: #0a192f;
 }
 
 section {
   padding-left: 25px;
   padding-right: 25px;
 }
-
-
-
-
-
