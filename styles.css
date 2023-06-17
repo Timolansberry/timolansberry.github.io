@@ -439,12 +439,66 @@ h3 {
 
 .about-me-p {
   color: rgb(136, 146, 176);
+  line-height: 26pt;
 }
 
 .color-text {
   color: #00ffff;
 }
 
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#skills {
+  padding: 20px 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: rgb(136, 146, 176);
+}
+
+.horizontal-list li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#github-logo {
+  color: white;
+  font-size: 23px;
+}
+.api-logo {
+  filter: invert(100%) sepia(0%) saturate(7474%) hue-rotate(70deg)
+    brightness(104%) contrast(107%);
+}
+
+h4 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: left;
+}
 /*--------End of About Me Styling Section --------*/
 
 body,
