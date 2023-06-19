@@ -109,3 +109,10 @@ function createProject(title, imageSrc, description, codeLink, liveLink) {
     var notification = document.getElementById("notification");
     notification.textContent = "Message sent!";
   });
+
+// Clear form data on page refresh for contact form
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }

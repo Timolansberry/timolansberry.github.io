@@ -474,17 +474,19 @@
       </section>
 
       <section class="container" id="contact-me">
-        <h3 class="about-heading">
-          <span class="color-text">03.</span> What's Next?
+        <h3 class="contact-heading">
+          <span class="color-text">03. What's Next?</span>
         </h3>
-        <p>Send me a message</p>
-        <p class="about-me-p">
-          If you have any questions or would like to work together, please feel
-          free to contact me. I am always open to new opportunities.</p>
-        <form id="contact-form">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
-          <textarea id="message" placeholder="Your Message" required></textarea>
+        <p class="contact-title">Send me a message</p>
+        <p class="contact-me-p">
+          My virtual door is always open If you have a question,
+          <br> would like to work together,
+           or just want to say hello, I'll get back to you soon! </p>
+        <form id="contact-form" action="https://formspree.io/f/myyarlqz"
+        method="POST">
+          <input type="text" id="name" placeholder="Your Name" name="name" required/>
+          <input type="email" id="email" placeholder="Your Email" name="email" required/>
+          <textarea id="message" placeholder="Your Message" name="message" required></textarea>
           <button type="submit"  class="contact-form-button">Send</button>
         </form>
         <div id="notification"></div>
