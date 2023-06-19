@@ -551,10 +551,15 @@ h4 {
   overflow-x: auto;
 }
 
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
 .project {
   flex: 0 0 auto;
   margin: 20px;
   width: 300px;
+  padding:5px;
 }
 
 .project:hover{
