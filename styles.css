@@ -626,7 +626,7 @@ button {
 /* Contact form Section*/
 .container {
   text-align: center;
-  padding: 150px 0;
+  padding: 150px 0 0px 0;
 }
 
 h3.contact-heading {
