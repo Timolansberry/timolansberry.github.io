@@ -7,6 +7,8 @@
           
         </form>
   
+
+        
   <script>
     function submitForm() {
       // Hide the iframe section
@@ -14,6 +16,13 @@
       // Submit the form
       document.getElementById("myForm").submit();
     }
+
+    // Clear form data on page refresh for contact form
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
   </script>
   
   <style>
