@@ -32,7 +32,7 @@ section {
 
 header {
   background-color: #0a192f;
-  padding: 30px 50px;
+  padding: 30px 50px 0 50px;
   border: 0;
 }
 
@@ -41,6 +41,17 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
+#navbar{
+position:fixed;
+top:0;  
+width:100%;
+z-index:1;
+transition: top 0.2s;
+}
+
+
+
 
 .logo-icon {
   margin-right: 0px;
@@ -384,7 +395,7 @@ i:hover {
 /*Hero Styling Section*/
 
 #hero {
-  padding: 0 0 150px 0;
+  padding: 100px 0 150px 0;
   margin: 0;
   border: 0;
   display: flex;
