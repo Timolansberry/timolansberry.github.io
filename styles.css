@@ -93,10 +93,12 @@ nav {
   margin: 0;
   padding: 0 5px;
   transition: color 0.3s;
+  font-family: consolas;
 }
 
 .navbar-links ul li a p.number {
   color: #00ffff;
+  font-family: consolas;
 }
 
 .navbar-links ul li a:hover p {
@@ -336,6 +338,7 @@ nav {
   text-decoration: none;
   writing-mode: vertical-lr;
   
+  
 }
 
 .right-div-email:hover {
@@ -469,6 +472,7 @@ h3 {
   color: white;
   text-align: left;
   padding-left: 120px;
+  font-family: consolas;
 }
 
 .about-heading {
@@ -506,8 +510,10 @@ h3 {
 
 .about-me-text {
   flex: 1;
-  max-width: 50%;
-  margin: 0 0 0 0;
+  max-width: 30%;
+  margin: 0 10%;
+  text-align: left;
+  
 }
 
 .about-me-p {
