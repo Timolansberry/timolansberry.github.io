@@ -402,7 +402,8 @@ h2 {
 .hero-text {
   flex: 1;
   max-width: 100%;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 80px;
+  
 }
 
 .hero-img img {
