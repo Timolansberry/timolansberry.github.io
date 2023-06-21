@@ -494,19 +494,11 @@ h3 {
   font-family: consolas;
 }
 
+
+
+
 .about-heading {
   position: relative;
-}
-
-.about-heading::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  right: 620px;
-  transform: translateY(-50%);
-  height: 1px;
-  width: 250px;
-  background-color: rgb(136, 146, 176);
 }
 
 .content-wrapper {
