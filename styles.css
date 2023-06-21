@@ -516,13 +516,15 @@ h2 {
 }
 
 .footer-ul li {
-  margin: 0 15px;
+  margin: 15px 15px;
 }
 
   #contact-me {
     text-align: center;
     padding: 100px 0 0px 0;
   }
+
+  
 }
 
 
