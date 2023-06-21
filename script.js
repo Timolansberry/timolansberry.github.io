@@ -3,14 +3,22 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navbar").style.top = "0"; // showing navbar distance
   } else {
-    document.getElementById("navbar").style.top = "-75px";
+    document.getElementById("navbar").style.top = "-100px"; // hidding navbar distance
   }
   prevScrollpos = currentScrollPos;
 }
 
-
+//Adds navbar shadow on scroll
+window.addEventListener('scroll',(e)=>{
+  const nav = document.querySelector('.nav');
+  if(window.pageYOffset>0){
+    nav.classList.add("add-shadow");
+  }else{
+    nav.classList.remove("add-shadow");
+  }
+});
 
 
 

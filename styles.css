@@ -32,14 +32,20 @@ section {
 
 header {
   background-color: #0a192f;
-  padding: 30px 50px 0 50px;
+  padding: 30px 50px 10px 50px;
   border: 0;
+  
+}
+
+.add-shadow{ /* this class is for shadow effect*/
+box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 #navbar{
@@ -47,7 +53,8 @@ position:fixed;
 top:0;  
 width:100%;
 z-index:1;
-transition: top 0.2s;
+transition: top 0.3s;
+
 }
 
 
@@ -348,7 +355,8 @@ transition: top 0.2s;
   color: #00ffff;
   text-decoration: none;
   writing-mode: vertical-lr;
-  
+  font-size: 18px;
+  letter-spacing: 2px;
   
 }
 
@@ -374,7 +382,7 @@ transition: top 0.2s;
   content: "";
     display: block;
     width: 1px;
-    height: 250px;
+    height: 80px;
     margin: 30px auto 0 auto;
     color: rgb(136, 146, 176);
     
@@ -395,7 +403,7 @@ i:hover {
 /*Hero Styling Section*/
 
 #hero {
-  padding: 100px 0 150px 0;
+  padding: 100px 0 200px 0;
   margin: 0;
   border: 0;
   display: flex;
@@ -468,7 +476,7 @@ h2 {
 /*About Me Styling Section*/
 
 #about-me {
-  padding: 150px 0;
+  padding: 100px 0 200px 0;
   margin: 0;
   border: 0;
   display: flex;
@@ -600,7 +608,7 @@ h4 {
 
 #projects{
   color:rgb(136, 146, 176);
-  padding: 150px 0;
+  padding: 100px 0 200px 0;
 }
 
 #other-projects{
