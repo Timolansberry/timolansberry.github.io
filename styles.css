@@ -487,12 +487,42 @@ h2 {
 
   h1 {
     font-size: 40px;
+    padding-top:40px;
   }
   
   h2 {
     font-size: 24px;
   }
 
+  .about-heading{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-me-text{
+    margin: 0  !important;
+  }
+
+.footer{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-ul li {
+  margin: 0 15px;
+}
+
+  #contact-me {
+    text-align: center;
+    padding: 100px 0 0px 0;
+  }
 }
 
 
