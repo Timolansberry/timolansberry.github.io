@@ -32,7 +32,7 @@ section {
 
 header {
   background-color: #0a192f;
-  padding: 15px;
+  padding: 30px 50px;
   border: 0;
 }
 
@@ -43,8 +43,10 @@ nav {
 }
 
 .logo-icon {
-  margin-right: 10px;
-  margin-left: 40px;
+  margin-right: 0px;
+  margin-left: 8px;
+  z-index: 10;
+  
 }
 
 .logo-icon a {
@@ -55,7 +57,7 @@ nav {
 }
 
 .logo-icon svg {
-  height: 40px;
+  height: 45px;
 }
 
 #logo:hover #Shape {
@@ -76,7 +78,8 @@ nav {
 }
 
 .navbar-links ul li {
-  margin-left: 10px; /* Add some spacing between items */
+  
+  padding:0px 10px;
 }
 
 .navbar-links ul li a {
@@ -283,15 +286,25 @@ nav {
   position: fixed;
   top: 20;
   left: 0;
+  bottom:0;
   width: 10%;
   height: 100vh;
   background-color: #0a192f;
 }
 
 .left-div-ul {
-  position: center;
+  position: absolute;
   text-align: center;
+  bottom:0;
+  left:50%;
+  list-style-type: none;
+  margin-left:-21px;
 }
+
+.left-div-ul li{
+  padding-top: 5px;;
+}
+
 
 .middle-div {
   width: 80%;
@@ -323,27 +336,31 @@ nav {
 }
 
 .right-div-email:hover {
-  font-size: 1.03em;
+  transform: translateY(-3px);
 }
 
+
+
 .vertical {
-  border-left: 2px solid rgb(136, 146, 176);
-  height: 240px;
-  position: absolute;
-  left: 50%;
-  margin-top: 30px;
+  
+  content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    margin: 30px auto 0 auto;
+    color: rgb(136, 146, 176);
+    
 }
 
 i {
   color: #00ffff;
   padding: 5px;
+  
 }
 i:hover {
-  font-size: 2.3em;
+  transform: translateY(-3px);
 }
-.top-icon {
-  padding-top: 280px;
-}
+
 
 /*--------End of Left, Middle, and Right Div container Styling --------*/
 
@@ -358,7 +375,7 @@ i:hover {
 
 h1 {
   font-size: 64px;
-  padding: 100px 0 10px 0;
+  padding: 70px 0 10px 0;
   color: white;
 }
 
