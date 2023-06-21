@@ -323,16 +323,19 @@ nav {
 }
 
 .right-div-ul {
-  position: center;
+  position: absolute;
   text-align: center;
   list-style-type: none;
+  bottom:0;
+  right:45%
+  
 }
 
 .right-div-email {
   color: #00ffff;
   text-decoration: none;
   writing-mode: vertical-lr;
-  padding-top: 180px;
+  
 }
 
 .right-div-email:hover {
@@ -347,6 +350,17 @@ nav {
     display: block;
     width: 1px;
     height: 200px;
+    margin: 30px auto 0 auto;
+    color: rgb(136, 146, 176);
+    
+}
+
+.vertical-right {
+  
+  content: "";
+    display: block;
+    width: 1px;
+    height: 250px;
     margin: 30px auto 0 auto;
     color: rgb(136, 146, 176);
     
@@ -395,11 +409,26 @@ h2 {
   flex: 1;
   width: 460px;
   height: auto;
-  margin: 0 0 0 60px;
+  margin: 0 0 0 0px;
+
+}
+
+.hero-img{
+  width: 35vw;
+}
+
+
+
+@media (max-width: 1030px) {
+  .hero-img{
+    display: none;
+  }
 }
 
 .hero-p {
   color: rgb(136, 146, 176);
+  margin: 0 0 20px 0;
+  width:70%;
 }
 
 .contact-button {
