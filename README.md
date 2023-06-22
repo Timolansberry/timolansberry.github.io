@@ -1,4 +1,4 @@
-# Portfolio in progress  
+# Current Portfolio  
 
 You can see it live by clicking [here](https://timolansberry.github.io/).
 
